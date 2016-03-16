@@ -2,7 +2,23 @@ Dirichlet Eta Function
 ===
 [![NPM version][npm-image]][npm-url] [![Build Status][build-image]][build-url] [![Coverage Status][coverage-image]][coverage-url] [![Dependencies][dependencies-image]][dependencies-url]
 
-> [Dirichlet eta function][eta-function].
+> [Dirichlet eta][eta-function] function.
+
+The [Dirichlet eta][eta-function] function is defined by the [Dirichlet series][dirichlet-series]
+
+<!-- <equation class="equation" label="eq:dirichlet_eta_function" align="center" raw="\eta(s) = \sum_{n=1}^{\infty} \frac{(-1)^{n-1}}{n^s} = \frac{1}{1^s} - \frac{1}{2^s} + \frac{1}{3^s} - \frac{1}{4^s} + \cdots" alt="Dirichlet eta function"> -->
+
+<!-- </equation> -->
+
+where `s` is a complex variable equal to `σ + ti`. The series is convergent for all complex numbers having a real part greater than `0`.
+
+The [Dirichlet eta][eta-function] function is an alternating sum and also known as the __alternating zeta function__. The series corresponds to the Dirichlet series expansion of the [Riemann zeta][zeta-function] function, leading to the following relation
+
+<!-- <equation class="equation" label="eq:dirichlet_riemann_relation" align="center" raw="\eta(s) = (1-2^{1-s})\zeta(s)" alt="Dirichlet-Riemann zeta relation"> -->
+
+<!-- </equation> -->
+
+where `ζ(s)` is the [Riemann zeta][zeta-function] function.
 
 
 ## Installation
@@ -20,7 +36,7 @@ var eta = require( 'math-dirichlet-eta' );
 
 #### eta( s )
 
-Evaluates the [Dirichlet eta function][eta-function] as a function of a real variable `s`.
+Evaluates the [Dirichlet eta][eta-function] function as a function of a real variable `s`.
 
 ``` javascript
 var v = eta( 0 ); // Abel sum of 1-1+1-1+...
@@ -144,3 +160,5 @@ Copyright &copy; 2016. The [Compute.io][compute-io] Authors.
 
 [compute-io]: https://github.com/compute-io/
 [eta-function]: https://en.wikipedia.org/wiki/Dirichlet_eta_function
+[dirichlet-series]: https://en.wikipedia.org/wiki/Dirichlet_series
+[zeta-function]: https://github.com/math-io/riemann-zeta
