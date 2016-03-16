@@ -13,7 +13,7 @@ var eta = require( './../lib' );
 
 // FIXTURES //
 
-
+var data = require( './fixtures/results.json' );
 
 
 // TESTS //
@@ -26,6 +26,28 @@ tape( 'main export is a function', function test( t ) {
 tape( 'if provided `NaN`, the function returns `NaN`', function test( t ) {
 	var v = eta( NaN );
 	t.ok( v !== v, 'returns NaN when provided a NaN' );
+	t.end();
+});
+
+tape( 'the function evaluates the Dirichlet eta function', function test( t ) {
+	var expected;
+	var delta;
+	var tol;
+	var s;
+	var v;
+	var i;
+
+	s = data.x;
+	expected = data.expected;
+	for ( i = 0; i < s.length; i++ ) {
+		v = eta( s[i] );
+		delta = abs( v - expected[i] );
+
+		// R: 1.1e5*eps => 2.4424906541753444e-11 => http://finzi.psych.upenn.edu/library/pracma/html/eta.html states that accuracy is 13 digits
+		// Julia: 102*eps => 2.2648549702353193e-14
+		tol = 102 * EPS * abs( expected[i] );
+		t.ok( delta <= tol, 'within tolerance. s: '+s[i]+'. v: '+v+'. E: '+expected[i]+'. Δ: '+delta+'. tol: '+tol+'.' );
+	}
 	t.end();
 });
 
