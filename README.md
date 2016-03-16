@@ -30,7 +30,7 @@ v = eta( -1.0 ); // Abel sum of 1-2+3-4+...
 // returns 0.25
 
 v = eta( 1.0 ); // alternating harmonic series
-// returns 6.931471805599453 => ln(2)
+// returns 0.6931471805599453 => ln(2)
 
 v = eta( 3.14 );
 // returns ~0.9096

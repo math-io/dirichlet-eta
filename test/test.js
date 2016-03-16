@@ -35,7 +35,7 @@ tape( 'if provided `1`, the function returns `ln(2)` (alternating harmonic serie
 	t.end();
 });
 
-tape( 'if provided `0`, the function returns `0.5`', function test( t ) {
+tape( 'if provided `0`, the function returns `0.5` (Abel sum)', function test( t ) {
 	var v = eta( 0.0 );
 	t.equal( v, 0.5, 'returns 0.5' );
 	t.end();
