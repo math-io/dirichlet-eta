@@ -1,6 +1,6 @@
 {
   "name": "math-dirichlet-eta",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Dirichlet eta function.",
   "author": {
     "name": "Athan Reines",
