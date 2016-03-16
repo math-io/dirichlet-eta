@@ -15,7 +15,7 @@ The [Dirichlet eta][eta-function] function is defined by the [Dirichlet series][
 
 where `s` is a complex variable equal to `σ + ti`. The series is convergent for all complex numbers having a real part greater than `0`.
 
-The [Dirichlet eta][eta-function] function is an alternating sum and also known as the __alternating zeta function__. The series corresponds to the Dirichlet series expansion of the [Riemann zeta][zeta-function] function, leading to the following relation
+Note that the [Dirichlet eta][eta-function] function also known as the __alternating zeta function__ and denoted `ζ*(s)`. The series is an alternating sum corresponding to the Dirichlet series expansion of the [Riemann zeta][zeta-function] function. Accordingly, the following relation holds:
 
 <!-- <equation class="equation" label="eq:dirichlet_riemann_relation" align="center" raw="\eta(s) = (1-2^{1-s})\zeta(s)" alt="Dirichlet-Riemann zeta relation"> -->
 <div class="equation" align="center" data-raw-text="\eta(s) = (1-2^{1-s})\zeta(s)" data-equation="eq:dirichlet_riemann_relation">
