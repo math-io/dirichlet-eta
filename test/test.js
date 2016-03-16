@@ -86,7 +86,7 @@ tape( 'if provided `4`, the function returns `7π**4/720`', function test( t ) {
 	t.end();
 });
 
-tape( 'if provided `6`, the function returns `31π**7/30240`', function test( t ) {
+tape( 'if provided `6`, the function returns `31π**6/30240`', function test( t ) {
 	var expected;
 	var delta;
 	var tol;
@@ -99,7 +99,7 @@ tape( 'if provided `6`, the function returns `31π**7/30240`', function test( t 
 	v = eta( s );
 
 	delta = abs( v - expected );
-	tol = EPS * abs( expected );
+	tol = 2 * EPS * abs( expected );
 
 	t.ok( delta <= tol, 'within tolerance. s: '+s+'. v: '+v+'. E: '+expected+' Δ: '+delta+'. tol: '+tol );
 	t.end();
@@ -118,7 +118,7 @@ tape( 'if provided `8`, the function returns `127π**8/1209600`', function test(
 	v = eta( s );
 
 	delta = abs( v - expected );
-	tol = EPS * abs( expected );
+	tol = 2 * EPS * abs( expected );
 
 	t.ok( delta <= tol, 'within tolerance. s: '+s+'. v: '+v+'. E: '+expected+' Δ: '+delta+'. tol: '+tol );
 	t.end();
@@ -156,7 +156,7 @@ tape( 'if provided `12`, the function returns `1414477π**12/1307674368000`', fu
 	v = eta( s );
 
 	delta = abs( v - expected );
-	tol = EPS * abs( expected );
+	tol = 2 * EPS * abs( expected );
 
 	t.ok( delta <= tol, 'within tolerance. s: '+s+'. v: '+v+'. E: '+expected+' Δ: '+delta+'. tol: '+tol );
 	t.end();
