@@ -55,6 +55,7 @@
   "devDependencies": {
     "browserify": "13.x.x",
     "codecov": "1.x.x",
+    "compute-linspace": "^1.0.0",
     "const-eps-float64": "^1.0.0",
     "const-pi": "^1.0.3",
     "istanbul": "^0.4.1",

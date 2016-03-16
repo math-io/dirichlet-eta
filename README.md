@@ -23,8 +23,20 @@ var eta = require( 'math-dirichlet-eta' );
 Evaluates the [Dirichlet eta function][eta-function] as a function of a real variable `s`.
 
 ``` javascript
-eta()
-// returns 
+var v = eta( 0 ); // Abel sum of 1-1+1-1+...
+// returns 0.5
+
+v = eta( -1.0 ); // Abel sum of 1-2+3-4+...
+// returns 0.25
+
+v = eta( 1.0 ); // alternating harmonic series
+// returns 6.931471805599453 => ln(2)
+
+v = eta( 3.14 );
+// returns ~0.9096
+
+v = eta( NaN );
+// returns NaN
 ```
 
 
