@@ -7,7 +7,10 @@ Dirichlet Eta Function
 The [Dirichlet eta][eta-function] function is defined by the [Dirichlet series][dirichlet-series]
 
 <!-- <equation class="equation" label="eq:dirichlet_eta_function" align="center" raw="\eta(s) = \sum_{n=1}^{\infty} \frac{(-1)^{n-1}}{n^s} = \frac{1}{1^s} - \frac{1}{2^s} + \frac{1}{3^s} - \frac{1}{4^s} + \cdots" alt="Dirichlet eta function"> -->
-
+<div class="equation" align="center" data-raw-text="\eta(s) = \sum_{n=1}^{\infty} \frac{(-1)^{n-1}}{n^s} = \frac{1}{1^s} - \frac{1}{2^s} + \frac{1}{3^s} - \frac{1}{4^s} + \cdots" data-equation="eq:dirichlet_eta_function">
+	<img src="https://cdn.rawgit.com/math-io/dirichlet-eta/81cde5d561f876a7717763986d98fc5a42c2ec12/docs/img/dirichlet_eta_function.svg" alt="Dirichlet eta function">
+	<br>
+</div>
 <!-- </equation> -->
 
 where `s` is a complex variable equal to `σ + ti`. The series is convergent for all complex numbers having a real part greater than `0`.
@@ -15,7 +18,10 @@ where `s` is a complex variable equal to `σ + ti`. The series is convergent for
 The [Dirichlet eta][eta-function] function is an alternating sum and also known as the __alternating zeta function__. The series corresponds to the Dirichlet series expansion of the [Riemann zeta][zeta-function] function, leading to the following relation
 
 <!-- <equation class="equation" label="eq:dirichlet_riemann_relation" align="center" raw="\eta(s) = (1-2^{1-s})\zeta(s)" alt="Dirichlet-Riemann zeta relation"> -->
-
+<div class="equation" align="center" data-raw-text="\eta(s) = (1-2^{1-s})\zeta(s)" data-equation="eq:dirichlet_riemann_relation">
+	<img src="https://cdn.rawgit.com/math-io/dirichlet-eta/81cde5d561f876a7717763986d98fc5a42c2ec12/docs/img/dirichlet_riemann_relation.svg" alt="Dirichlet-Riemann zeta relation">
+	<br>
+</div>
 <!-- </equation> -->
 
 where `ζ(s)` is the [Riemann zeta][zeta-function] function.
